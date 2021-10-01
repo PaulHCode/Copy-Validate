@@ -22,6 +22,8 @@
    Copy-Validate -Source C:\folder1\ -Destination D:\folder2\ -Files @('file1.txt',"*.html") -Recurse
 
    Copies file1.txt and all files ending in .html anywhere in folder1 or any of the child directories. If the hashes don't match then it re-copies until it is correct.
+.NOTES
+    Author: Paul Harrison
 #>
 function Copy-Validate {
     [CmdletBinding()]
