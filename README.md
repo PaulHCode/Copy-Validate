@@ -1,6 +1,6 @@
 # Copy-Validate
 
-<#
+
 .Synopsis
    Copies files and validates the hashes are the same and the source and destination.  If they are different then it re-copies until hashes match.
 .DESCRIPTION
@@ -24,4 +24,4 @@
    Copy-Validate -Source C:\folder1\ -Destination D:\folder2\ -Files @('file1.txt',"*.html") -Recurse
 
    Copies file1.txt and all files ending in .html anywhere in folder1 or any of the child directories. If the hashes don't match then it re-copies until it is correct.
-#>
+
